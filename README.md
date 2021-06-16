@@ -1,6 +1,6 @@
 # Design System
 
-> A Design System Starter Kit for Pearson AEM Static web development.
+> A Design System Starter Kit for  AEM Static web development.
 
 ## Features / Use Cases
 This Design System provides a simple way of setting up a modern web development environment.
