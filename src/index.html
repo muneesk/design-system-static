@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Design System - Index</title>
+  <link rel="stylesheet" href="assets/css/design-system.css">
+    <!-- The (below) inline style code is only for index page and landing page demo purpose -->
+  <style>
+    body.page{
+        padding-top: 0;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #5C1A4D;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        font-size: 36px;
+        padding: 10px;
+
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+    .inner {
+      
+        padding: 50px;
+    }
+
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
+</head>
+<body>
+ 
+ <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="typography.html">Typography</a>
+    <a href="buttons.html">Buttons</a>
+    <a href="navbars.html">Navbars</a>
+</div>
+<div id="main">
+    <span style="font-size:30px;cursor:pointer; color:#5C1A4D" onclick="openNav()">&#9776;&nbsp; </span>
+    <img alt="logo" width="60px" style="margin-top:-15px;" src="/assets/images/logo.svg">
+    <div class="inner">
+      <h1 class="title">Welcome to Design System</h1>
+      <p class="description"><strong>
+        A Design System Starter Kit for Pearson AEM Static web development.
+      </strong></p>
+      </div>
+
+         
+    </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- Include all compiled JS (below), or include individual files as needed -->
+    <script async src="assets/js/all.js"></script>
+  <!-- The (below) code is only for index page and landing page demo purpose -->
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+      }
+  </script>
+
+</body>
+</html>
