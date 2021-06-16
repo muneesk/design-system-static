@@ -34,7 +34,6 @@ const gulp                      = require('gulp'),
       browserSync               = require('browser-sync').create(),
       pug                       = require('gulp-pug'),
       dependents                = require('gulp-dependents'),
-      hbs                       = require('gulp-hbs');
 
       src_folder                = './src/',
       src_assets_folder         = src_folder + 'assets/',
